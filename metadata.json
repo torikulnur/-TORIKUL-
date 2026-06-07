@@ -1,0 +1,6 @@
+{
+  "name": "T-Tech",
+  "description": "Premium cyber IPTV streaming portal optimized for mobile, with true fullscreen and neon interactive dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
