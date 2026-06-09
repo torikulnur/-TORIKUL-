@@ -43,9 +43,15 @@ interface Channel {
   category: string;
   country: string;
 }
-
 // Robust, fail-safe high-quality default streams that load instantly
 const STABLE_DEFAULT_CHANNELS: Channel[] = [
+  {
+    name: "T Sports HD Live",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/b4/T_Sports_logo.svg", // এটি ব্যাকআপ লোগো, চাইলে তরিকুল ভাইয়ের আসল লোগো দিতে পারেন
+    url: "https://bdiptv.streamway.top/tsports/index.m3u8", // এখানে তরিকুল ভাইয়ের সচল T Sports m3u8 লিংকটি বসিয়ে দেবেন
+    category: "Sports",
+    country: "BD"
+  },
   {
     name: "NASA HD Live Space Stream",
     logo: "https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg",
@@ -80,29 +86,10 @@ const STABLE_DEFAULT_CHANNELS: Channel[] = [
     url: "https://rbmn-live.akamaized.net/hls/live/590945/bo-live-01/master.m3u8",
     category: "Sports",
     country: "Global"
-  },
-  {
-    name: "Retro Cinema Classic Streaming",
-    logo: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=150&auto=format&fit=crop&q=60",
-    url: "https://test-streams.mux.dev/x36xhg/playlist.m3u8",
-    category: "Movies",
-    country: "Global"
-  },
-  {
-    name: "Sintel 4K Cinema Live",
-    logo: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=150&auto=format&fit=crop&q=60",
-    url: "https://test-streams.mux.dev/pts_live/playlist.m3u8",
-    category: "Movies",
-    country: "Global"
-  },
-  {
-    name: "Lofi Beats Ambient Radio",
-    logo: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=150&auto=format&fit=crop&q=60",
-    url: "https://playertest.longtailvideo.com/adaptive/wowza/playlist.m3u8",
-    category: "Music",
-    country: "US"
   }
 ];
+
+;
 
 export default function App() {
   // Navigation Screens Tabs state
